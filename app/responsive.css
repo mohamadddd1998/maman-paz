@@ -139,6 +139,11 @@
     align-self: end;
     border-radius: 0px;
   }
+  .explian-item-img,
+.how-item-img,
+.introduce-item-img {
+  flex: none;
+}
   .introduce-item {
     margin-top: 50px;
   }
