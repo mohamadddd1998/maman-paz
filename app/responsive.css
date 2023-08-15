@@ -1,0 +1,217 @@
+@media screen and (max-width: 1024px) {
+  .header figure {
+    flex: 1;
+  }
+  .header-content {
+    flex: 1;
+  }
+  .header {
+    margin-top: 0px;
+    flex-direction: column-reverse;
+  }
+  .header-content h1 {
+    font-size: 28px;
+  }
+  .benefits-items {
+    grid-template-columns: repeat(2, 270px);
+    grid-template-rows: repeat(3, auto);
+   
+  }
+  .food-items {
+    grid-template-columns: repeat(2, 290px);
+  }
+  #cart-layout {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .menu-humber {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px;
+    display: block;
+  }
+  .menu-humber a {
+    display: block;
+    padding: 10px;
+  }
+  .menu-mobile {
+    top: 0;
+    bottom: 0;
+    right: -500px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    height: 100vh;
+    padding: 5px;
+    align-items: center;
+    z-index: 120;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: 0.5s all linear;
+    align-items: start;
+  }
+  .right-menu-mobile nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: start;
+  }
+  .right-menu-mobile nav a {
+    display: inline-block;
+    margin: 10px 0px;
+  }
+  .right-menu-mobile nav a:not(:first-child):hover {
+    color: #ff5851;
+  }
+  .isShow-menu-moblie {
+    right: 0;
+  }
+  .left-menu {
+    padding: 10px;
+  }
+  .cover-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 110;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+  }
+  .isShow-cover-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #banner {
+    display: none;
+  }
+  #xmark {
+    display: block;
+  }
+  #xmark i,
+  .menu-humber a i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .support-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .support-content div:last-child button{
+    margin: 10px;
+  }
+  .swiper-customer {
+    height: 870px;
+    padding: 20px !important;
+  }
+  .swiper-slide {
+    height: 845px !important;
+    flex-direction: column;
+  }
+  .swiper-slide-customer-banner,
+  .swiper-slide-customer-content figure {
+    transform: scale(0.8);
+  }
+  footer {
+    justify-content: center;
+  }
+  .footer-number-email {
+    display: none;
+  }
+  .explian-item ,.how-item ,.introduce-item {
+    flex-direction: column !important;
+    align-self: end;
+    border-radius: 0px;
+  }
+  .introduce-item {
+    margin-top: 50px;
+  }
+  .explian-item-img,.how-item-img,.introduce-item-img {
+    height: 250px;
+    justify-content: center;
+  }
+  .explian-item-img img,.how-item-img img,.introduce-item-img img{
+    border-radius: 0px !important;
+  }
+  .software-content {
+    flex-direction: column;
+  }
+  .software-content-img {
+    transform: scale(0.8);
+  }
+  .filters{
+    margin: 25px auto;
+  }
+  .food-layout,.cart-layout {
+    margin:25px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*.menu-mobile {
+    width: 50vw;
+  }*/
+  .benefits-items {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(6, auto);
+   
+  }
+  .cart-step3 nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-step3 nav span , .cart-step3 nav input{
+    margin: 5px 0px;
+  }
+  .plan-select{
+    flex-direction: column;
+  }
+  .plan-select > div{
+    margin: 10px;
+  }
+  .filters{
+    flex-direction: column;
+    align-items: center;
+  }
+  .filters > div{
+    margin: 10px auto;
+  }
+  .select-address-city-province{
+    flex-direction: column;
+  }
+  .select-address-city-province > div{
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .food-items {
+    grid-template-columns: repeat(1, 290px);
+  }
+}
+@media screen and (max-width:900px) {
+  .food-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-picture,.food-detail{
+    margin: 10px;
+    align-self: center;
+  }
+}
