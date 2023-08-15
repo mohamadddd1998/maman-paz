@@ -197,6 +197,9 @@
   .select-address-city-province > div{
     margin: 10px;
   }
+  .cart-takhfif span{
+    top: 16%;
+  }
 }
 @media screen and (max-width: 650px) {
   .food-items {
